@@ -5,16 +5,12 @@
 <script>
 function getMobileOperatingSystem() {
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-    if (/windows phone/i.test(userAgent)) {
-        return "Windows Phone";
-    }
     if (/android/i.test(userAgent)) {
         return "Android";
     }
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         return "iOS";
     }
-
     return "unknown";
 }
 </script>
@@ -23,16 +19,13 @@ function getMobileOperatingSystem() {
 function DetectAndServe(){
 
 if (getMobileOperatingSystem() == "Android") {
-    window.location.href = "https://www.Android Link.com"; 
+    window.location.href = " Linkhttps://www.googleplaystore.com"; 
     }
 if (getMobileOperatingSystem() == "iOS") {
-    window.location.href = "https://www.iOS Link.com";
-    }
-if (getMobileOperatingSystem() == "Windows Phone") {
-    window.location.href = "https://www.Windows Phone Link.com";
+    window.location.href = "https://www.iosappstore.com";
     }
 if (getMobileOperatingSystem() == "unknown") {
-  window.location.href = "https://www.google.com";}
+  window.location.href = "https://www.yourwebsite.com";}
 };
 </script>
 </head>
